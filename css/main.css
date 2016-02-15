@@ -1,0 +1,83 @@
+body
+{
+    padding: 0 0;
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+footer
+{
+    padding: 0 0 !important;
+    margin: 0 0 !important;
+}
+
+nav
+{
+    position:fixed;
+    z-index: 1;
+}
+
+.first-blur
+{
+    position:relative;
+    top: 58px;
+}
+
+.first-blur + div
+{
+    margin-top: 3.1%;
+}
+
+.blur
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    padding-bottom: 4.5%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#code-blur
+{
+    background-image: url("../img/code-blur.png");
+}
+
+#aca-blur
+{
+    background-image: url("../img/bradley-blur.jpg");
+}
+
+#intern-blur
+{
+    background-image: url("../img/intern-blur.jpg");
+}
+
+.blur > h1
+{
+    margin: auto auto;
+    padding: 3% 0 0 0;
+
+}
+
+.nav-wrapper
+{
+    padding: 3px 10px;
+}
+
+.section-content
+{
+    padding:20px 12% 10px 12%;
+}
+
+.white-engrave
+{
+    color: rgba(253, 253, 253, 0.85);
+    text-shadow: 0 -2px 0px rgba(25,25,25,.5); /* 50% white from bottom */
+}
+
+.dark-engrave
+{
+    color: rgba(20, 20, 20, 0.85);
+    text-shadow: 1px 2px 0px rgba(255, 255, 255, 0.7); /* 50% white from bottom */
+}
