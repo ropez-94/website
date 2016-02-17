@@ -26,7 +26,7 @@ var onHeaderClick = function()
 
         thisTitle.animate({
             "padding": headerSize
-        },700);
+        },700, deleteToast);
     }
     else
     {
@@ -34,9 +34,16 @@ var onHeaderClick = function()
 
         //Change size
         thisTitle.animate({
-            "padding-top":"1%",
-            "padding-bottom":"1%"
-        },700);
+            "padding-top":".8%",
+            "padding-bottom":".8%"
+        },400, function()
+        {
+            thisTitle.animate({
+                "padding-top":"1%",
+                "padding-bottom":"1%"
+            },150);
+        });
+
 
         //Set scroll
         scrollToElement(thisHeader);
@@ -75,9 +82,12 @@ var resizePDFViewer = function()
 
 $(document).ready(function()
 {
+    $(".button-collapse").sideNav();
+
     //Adjust header heights
     var footerOffset = $(".page-footer").offset();
     var footerBottom = footerOffset.top + $(".page-footer").height();
+
     if(footerBottom < $(window).height())
     {
         headerSize = "5% 0";

@@ -220,3 +220,7 @@ content
     padding-top: 0 !important;
 }
 
+#sidenav-overlay
+{
+    z-index: 19 !important;
+}
