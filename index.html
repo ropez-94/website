@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link type="text/css" href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" href="css/materialize.min.css" rel="stylesheet">
+    <link type="text/css" href="css/materialize.css" rel="stylesheet">
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/main.js"></script>
@@ -17,41 +17,72 @@
                 <a href="#!" class="brand-logo center">Dakota Leonard</a>
                 <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="#academics">Academics</a></li>
-                    <li><a href="#internship">Internships</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#academics" class="chip hoverable white-text green nav-link">Academics</a></li>
+                    <li><a href="#internship" class="chip hoverable white-text deep-orange nav-link">Internships</a></li>
+                    <li><a href="#portfolio" class="chip hoverable white-text light-blue nav-link">Portfolio</a></li>
+                    <li><a href="#resume" class="chip hoverable white-text yellow darken-1 nav-link">Resume</a></li>
+                    <li><a href="#hobbies" class="chip hoverable white-text deep-purple nav-link">Hobbies</a></li>
                 </ul>
-                <!--<ul class="side-nav" id="mobile-menu">
+                <ul class="side-nav" id="mobile-menu">
                     <li><a href="#academics">Academics</a></li>
                     <li><a href="#internships">Internships</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                </ul>-->
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                </ul>
             </div>
         </nav>
-
+        <div class="img-blur center"><h1 class="blur-engrave">Software Engineer</h1></div>
     </header>
 
     <content>
-        <div id="academics" class="blur first-blur">
-            <h1 class="white-engrave">Academics</h1>
-        </div>
-        <div class="section-content grey lighten-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam nulla, iaculis scelerisque enim rutrum vel. Curabitur finibus in nunc ac porttitor. Duis faucibus ultrices libero, vitae efficitur lacus convallis in. Suspendisse vitae ultrices quam, vitae dictum nunc. Etiam sit amet elit vitae lectus dictum aliquet a vel nisl. Integer vel lacinia odio. Quisque vehicula suscipit pretium. Nam viverra justo a ornare porttitor. Sed vel nunc tellus. Nullam feugiat egestas aliquet. </p>
-        </div>
+        <ul class="collapsible" id="list-wrapper" data-collapsible="expandable">
+            <li class="first-header">
+                <div id="academics" class="header  collapsible-header">
+                    <h1 class="white-engrave">Academics</h1>
+                </div>
+                <div class="section-content grey lighten-3 collapsible-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam nulla, iaculis scelerisque enim rutrum vel. Curabitur finibus in nunc ac porttitor. Duis faucibus ultrices libero, vitae efficitur lacus convallis in. Suspendisse vitae ultrices quam, vitae dictum nunc. Etiam sit amet elit vitae lectus dictum aliquet a vel nisl. Integer vel lacinia odio. Quisque vehicula suscipit pretium. Nam viverra justo a ornare porttitor. Sed vel nunc tellus. Nullam feugiat egestas aliquet. </p>
+                </div>
+            </li>
 
-        <div id="internship" class="blur">
-            <h1 class="dark-engrave">Internships</h1>
-        </div>
-        <div class="section-content grey lighten-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam nulla, iaculis scelerisque enim rutrum vel. Curabitur finibus in nunc ac porttitor. Duis faucibus ultrices libero, vitae efficitur lacus convallis in. Suspendisse vitae ultrices quam, vitae dictum nunc. Etiam sit amet elit vitae lectus dictum aliquet a vel nisl. Integer vel lacinia odio. Quisque vehicula suscipit pretium. Nam viverra justo a ornare porttitor. Sed vel nunc tellus. Nullam feugiat egestas aliquet. </p>
-        </div>
+            <li>
+                <div id="internship" class="header collapsible-header">
+                    <h1 class="white-engrave">Internships</h1>
+                </div>
+                <div class="section-content grey lighten-3 collapsible-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam nulla, iaculis scelerisque enim rutrum vel. Curabitur finibus in nunc ac porttitor. Duis faucibus ultrices libero, vitae efficitur lacus convallis in. Suspendisse vitae ultrices quam, vitae dictum nunc. Etiam sit amet elit vitae lectus dictum aliquet a vel nisl. Integer vel lacinia odio. Quisque vehicula suscipit pretium. Nam viverra justo a ornare porttitor. Sed vel nunc tellus. Nullam feugiat egestas aliquet. </p>
+                </div>
+            </li>
 
-        <div id="portfolio" class="blur">
-            <h1 class="white-engrave">Portfolio</h1>
-        </div>
-        <div class="section-content grey lighten-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam nulla, iaculis scelerisque enim rutrum vel. Curabitur finibus in nunc ac porttitor. Duis faucibus ultrices libero, vitae efficitur lacus convallis in. Suspendisse vitae ultrices quam, vitae dictum nunc. Etiam sit amet elit vitae lectus dictum aliquet a vel nisl. Integer vel lacinia odio. Quisque vehicula suscipit pretium. Nam viverra justo a ornare porttitor. Sed vel nunc tellus. Nullam feugiat egestas aliquet. </p>
-        </div>
+            <li>
+                <div id="portfolio" class="header collapsible-header">
+                    <h1 class="white-engrave">Portfolio</h1>
+                </div>
+                <div class="section-content grey lighten-3 collapsible-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam nulla, iaculis scelerisque enim rutrum vel. Curabitur finibus in nunc ac porttitor. Duis faucibus ultrices libero, vitae efficitur lacus convallis in. Suspendisse vitae ultrices quam, vitae dictum nunc. Etiam sit amet elit vitae lectus dictum aliquet a vel nisl. Integer vel lacinia odio. Quisque vehicula suscipit pretium. Nam viverra justo a ornare porttitor. Sed vel nunc tellus. Nullam feugiat egestas aliquet. </p>
+                </div>
+            </li>
+
+            <li>
+                <div id="resume" class="header collapsible-header">
+                    <h1 class="white-engrave">Resume</h1>
+                </div>
+                <div class="section-content grey lighten-3 collapsible-body center">
+                    <object id="resume-pdf" data="pdf/Resume_02-08-16_nw.pdf" type="application/pdf">It seem your browser does not support
+                        pdf vieweing, luckily you can <a href="pdf/Resume_02-08-16_nw.pdf" target="_blank"> download </a>my resume.</a></object>
+                </div>
+            </li>
+
+            <li>
+                <div id="hobbies" class="header collapsible-header">
+                    <h1 class="white-engrave">Hobbies</h1>
+                </div>
+                <div class="section-content grey lighten-3 collapsible-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam nulla, iaculis scelerisque enim rutrum vel. Curabitur finibus in nunc ac porttitor. Duis faucibus ultrices libero, vitae efficitur lacus convallis in. Suspendisse vitae ultrices quam, vitae dictum nunc. Etiam sit amet elit vitae lectus dictum aliquet a vel nisl. Integer vel lacinia odio. Quisque vehicula suscipit pretium. Nam viverra justo a ornare porttitor. Sed vel nunc tellus. Nullam feugiat egestas aliquet. </p>
+                </div>
+            </li>
+        </ul>
     </content>
 
     <footer class="red darken-1 page-footer">
@@ -61,12 +92,22 @@
                     <div class="col s4">© 2016 Copyright Dakota Leonard</div>
                     <div class="col s8 right-align">
                         <h6 style="display: inline-block; padding-right:5px;">Made with: </h6>
-                        <a class="chip hoverable" href="https://jquery.com/">jQuery</a>
-                        <a class="chip hoverable" href="http://materializecss.com">Materialize</a>
+                        <a class="chip hoverable" target="_blank" href="https://jquery.com/">jQuery</a>
+                        <a class="chip hoverable" target="_blank" href="http://materializecss.com">Materialize</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- WIP Modal
+    <div id="wip-modal" class="modal indigo">
+        <div class="modal-content center">
+            <h2 class="white-engrave">This is a Work in Progress</h2>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div> -->
 </body>
 </html>

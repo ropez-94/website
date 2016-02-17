@@ -15,49 +15,62 @@ nav
 {
     opacity: .9;
     position:fixed;
+    top:0px;
     z-index: 1;
+    min-height:64px;
 }
 
-.first-blur
+.first-header
 {
     position:relative;
-    top: 64px;
+    top: 55px;
+    padding-bottom:54px;
 }
 
-.first-blur + div
+.first-header + div
 {
     margin-top: 3.1%;
 }
 
-.blur
+.header
 {
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    padding-bottom: 4.5%;
     text-align: center;
     vertical-align: middle;
+    z-index: 10;
 }
 
 #portfolio
 {
-    background-image: url("../img/code-blur.png");
+    background-color:#03a9f4;
 }
 
 #academics
 {
-    background-image: url("../img/bradley-blur.jpg");
+    background-color:#4caf50;
 }
 
 #internship
 {
-    background-image: url("../img/intern-blur.jpg");
+    background-color:#ff5722;
 }
 
-.blur > h1
+#resume
+{
+    background-color:#fdd835;
+}
+
+#hobbies
+{
+    background-color:#673ab7;
+}
+
+.header > h1
 {
     margin: auto auto;
-    padding: 3% 0 0 0;
+    padding: 4% 0px;
 
 }
 
@@ -81,4 +94,47 @@ nav
 {
     color: rgba(176, 176, 176, 0.85);
     text-shadow: 0 -2px 0px rgba(25,25,25,.5); /* 50% white from bottom */
+}
+
+#list-wrapper
+{
+    margin-bottom:0;
+}
+
+.nav-link
+{
+    font-size: 1.2em !important;
+    margin: 0 5px;
+}
+
+content
+{
+    height:100%;
+}
+
+.img-blur
+{
+    background-image:url("../img/code-blur.png");
+    background-repeat: no-repeat;
+    width:100%;
+    background-size: cover;
+    padding-bottom:4%;
+    position:relative;
+    top: 64px;
+    min-height:150px;
+}
+
+.blur-engrave
+{
+    margin:0;
+    padding-top: 30px;
+    font-weight: bold;
+    text-shadow: -2px -2px 0px rgba(25,25,25,.5); /* 50% white from bottom */
+    color: rgba(240,240,240,.8);
+}
+
+#resume-pdf
+{
+    width:100%;
+    min-height:750px;
 }
