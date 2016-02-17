@@ -90,9 +90,15 @@ nav
     box-shadow: 0 -8px 17px 0 rgba(0, 0, 0, .15) inset, 0 -6px 20px 0 rgba(0, 0, 0, 0.13) inset;
 }
 
-.white-engrave
+.white-engrave-alpha
 {
     color: rgba(253, 253, 253, 0.85);
+    text-shadow: 0 -2px 0px rgba(25,25,25,.5); /* 50% white from bottom */
+}
+
+.white-engrave
+{
+    color: rgba(255, 255, 255, 1);
     text-shadow: 0 -2px 0px rgba(25,25,25,.5); /* 50% white from bottom */
 }
 
@@ -142,4 +148,19 @@ content
 #resume-pdf
 {
     width:100%;
+}
+
+#bradley-list
+{
+    margin: 0 10%;
+}
+
+#bradley-title
+{
+    display: inline;
+}
+
+.tab
+{
+    min-width: 100px !important;
 }

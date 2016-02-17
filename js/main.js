@@ -48,12 +48,16 @@ var resizePDFViewer = function()
 $(document).ready(function()
 {
     //$("#wip-modal").openModal();
+    $('#view-classes-btn').leanModal();
+
+
     $(".button-collapse").sideNav();
     //$('.header').scrollSpy();
 
     $(".header").click(onHeaderClick);
     $(".nav-link").click(onNavClick);
     resizePDFViewer();
+    Materialize.toast("Click on a category to get started", 5000, "rounded z-depth-3");
 });
 
 $(window).resize()

@@ -32,23 +32,31 @@
                 </ul>
             </div>
         </nav>
-        <div class="img-blur center"><h1 class="blur-engrave">Software Engineer</h1></div>
+        <!-- REMOVE <div class="img-blur center"><h1 class="blur-engrave">Software Engineer</h1></div> -->
     </header>
 
     <content>
         <ul class="collapsible" id="list-wrapper" data-collapsible="expandable">
             <li class="first-header">
                 <div id="academics" class="header collapsible-header waves-effect waves">
-                    <h1 class="white-engrave">Academics</h1>
+                    <h1 class="white-engrave-alpha">Academics</h1>
                 </div>
                 <div class="section-content grey lighten-3 collapsible-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam nulla, iaculis scelerisque enim rutrum vel. Curabitur finibus in nunc ac porttitor. Duis faucibus ultrices libero, vitae efficitur lacus convallis in. Suspendisse vitae ultrices quam, vitae dictum nunc. Etiam sit amet elit vitae lectus dictum aliquet a vel nisl. Integer vel lacinia odio. Quisque vehicula suscipit pretium. Nam viverra justo a ornare porttitor. Sed vel nunc tellus. Nullam feugiat egestas aliquet. </p>
-                </div>
+                    <ul class="collection with-header" id="bradley-list">
+                        <li class="collection-header red z-depth-1"><h4 id="bradley-title" class="white-engrave">Bradley University</h4>
+                            <button data-target="bradley-class-modal" id="view-classes-btn" class="right white btn tooltipped z-depth-1 wave-effect modal-trigger"
+                               data-delay="50" data-tooltip="View Class History" data-position="top">
+                                <i class="material-icons red-text">launch</i></button></li>
+                        <li class="collection-item">Bachelors of Science in Computer Science</li>
+                        <li class="collection-item">Overall GPA: 3.58</li>
+                        <li class="collection-item">Major GPA: 3.86</li>
+                        <li class="collection-item">Graduating May 2016</li>
+                    </ul></div>
             </li>
 
             <li>
                 <div id="internship" class="header collapsible-header waves-effect waves-orange">
-                    <h1 class="white-engrave">Internships</h1>
+                    <h1 class="white-engrave-alpha">Internships</h1>
                 </div>
                 <div class="section-content grey lighten-3 collapsible-body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam nulla, iaculis scelerisque enim rutrum vel. Curabitur finibus in nunc ac porttitor. Duis faucibus ultrices libero, vitae efficitur lacus convallis in. Suspendisse vitae ultrices quam, vitae dictum nunc. Etiam sit amet elit vitae lectus dictum aliquet a vel nisl. Integer vel lacinia odio. Quisque vehicula suscipit pretium. Nam viverra justo a ornare porttitor. Sed vel nunc tellus. Nullam feugiat egestas aliquet. </p>
@@ -57,7 +65,7 @@
 
             <li>
                 <div id="portfolio" class="header collapsible-header waves-effect waves-blue">
-                    <h1 class="white-engrave">Portfolio</h1>
+                    <h1 class="white-engrave-alpha">Portfolio</h1>
                 </div>
                 <div class="section-content grey lighten-3 collapsible-body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam nulla, iaculis scelerisque enim rutrum vel. Curabitur finibus in nunc ac porttitor. Duis faucibus ultrices libero, vitae efficitur lacus convallis in. Suspendisse vitae ultrices quam, vitae dictum nunc. Etiam sit amet elit vitae lectus dictum aliquet a vel nisl. Integer vel lacinia odio. Quisque vehicula suscipit pretium. Nam viverra justo a ornare porttitor. Sed vel nunc tellus. Nullam feugiat egestas aliquet. </p>
@@ -66,7 +74,7 @@
 
             <li>
                 <div id="resume" class="header collapsible-header waves-effect">
-                    <h1 class="white-engrave">Resume</h1>
+                    <h1 class="white-engrave-alpha">Resume</h1>
                 </div>
                 <div class="section-content grey lighten-3 collapsible-body center">
                     <object width="10px" id="resume-pdf" data="pdf/Resume_02-08-16_nw.pdf" type="application/pdf">It seem your browser does not support
@@ -76,7 +84,7 @@
 
             <li>
                 <div id="hobbies" class="header collapsible-header waves-effect waves-purple">
-                    <h1 class="white-engrave">Hobbies</h1>
+                    <h1 class="white-engrave-alpha">Hobbies</h1>
                 </div>
                 <div class="section-content grey lighten-3 collapsible-body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam nulla, iaculis scelerisque enim rutrum vel. Curabitur finibus in nunc ac porttitor. Duis faucibus ultrices libero, vitae efficitur lacus convallis in. Suspendisse vitae ultrices quam, vitae dictum nunc. Etiam sit amet elit vitae lectus dictum aliquet a vel nisl. Integer vel lacinia odio. Quisque vehicula suscipit pretium. Nam viverra justo a ornare porttitor. Sed vel nunc tellus. Nullam feugiat egestas aliquet. </p>
@@ -100,14 +108,94 @@
         </div>
     </footer>
 
+    <!-- MODALS -->
+
+    <!-- Modal Structure -->
+    <div id="bradley-class-modal" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <ul class="tabs">
+                    <li class="tab"><a href="#f12">Fall 2012</a></li>
+                    <li class="tab"><a href="#s13">Spring 2013</a></li>
+                    <li class="tab"><a href="#f13">Fall 2013</a></li>
+                    <li class="tab"><a href="#s14">Spring 2014</a></li>
+                    <li class="tab"><a href="#f14">Fall 2014</a></li>
+                    <li class="tab"><a href="#s15">Spring 2015</a></li>
+                    <li class="tab"><a href="#f15">Fall 2015</a></li>
+                    <li class="tab"><a href="#s16">Spring 2016</a></li>
+                </ul>
+                <div id="f12" class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item">CS101: Introduction to Programming</li>
+                        <li class="collection-item">MATH120: Discrete Mathematics</li>
+                    </ul>
+                </div>
+                <div id="s13" class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item">CS102: Data Structures and Algorithms</li>
+                    </ul>
+                </div>
+                <div id="f13" class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item">CS140: Advanced Programming Concepts</li>
+                        <li class="collection-item">CIS215: Introduction to Scripting Languages</li>
+                        <li class="collection-item">MTH122: Calculus II</li>
+                    </ul>
+                </div>
+                <div id="s14" class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item">CS210: Advanced Data Structures and Algorithms</li>
+                        <li class="collection-item">CS220: Computer Architecture</li>
+                        <li class="collection-item">MATH223: Calculus III</li>
+                    </ul>
+                </div>
+                <div id="f14" class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item">CS215: Computability, Formal Languages & Heuristics</li>
+                        <li class="collection-item">CS321: Operating Systems</li>
+                        <li class="collection-item">CIS456: Game Engine Programming</li>
+                        <li class="collection-item">ENG305: Technical Writing</li>
+                        <li class="collection-item">MTH207: Linear Algebra</li>
+                    </ul>
+                </div>
+                <div id="s15" class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item">CS330: Net-Centric Computing</li>
+                        <li class="collection-item">CS370: Database Management Systems</li>
+                        <li class="collection-item">CS390: Software Engineering</li>
+                        <li class="collection-item">CIS415: Applied Cryptography</li>
+                        <li class="collection-item">MTH302: Graph Theory</li>
+                    </ul>
+                </div>
+                <div id="f15" class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item">CS480: Social and Professional Issues in Computing (Ethics)</li>
+                        <li class="collection-item">CS490: Capstone Project</li>
+                        <li class="collection-item">CS498: Independent Study: Bluetooth Low Energy for Mobile Devices </li>
+                        <li class="collection-item">CIS430: IT Infrastructure</li>
+                        <li class="collection-item">CIS433: Mobile & Wireless Networking</li>
+                    </ul>
+                </div>
+                <div id="s16" class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item">CS491: Capstone Project</li>
+                        <li class="collection-item">CIS435: Computer & Network Security</li>
+                        <li class="collection-item">CIS495: Software & Web Security</li>
+                        <li class="collection-item">MIS379: Information System Security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- WIP Modal
     <div id="wip-modal" class="modal indigo">
         <div class="modal-content center">
-            <h2 class="white-engrave">This is a Work in Progress</h2>
+            <h2 class="white-engrave-alpha">This is a Work in Progress</h2>
         </div>
         <div class="modal-footer">
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
         </div>
-    </div> -->
+    </div>-->
 </body>
 </html>
