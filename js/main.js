@@ -1,23 +1,62 @@
 /**
  * Created by dakotaleonard on 2/14/16.
  */
-var onHeaderClick = function(eventObject)
+var onHeaderClick = function()
 {
-    var thisElement = $(this);
-    if(thisElement.hasClass("z-depth-5"))
+    var thisHeader = $(this);
+    var thisTitle = thisHeader.children();
+
+    if(thisHeader.hasClass("z-depth-2"))
     {
-        thisElement.removeClass("z-depth-5");
+        thisHeader.removeClass("z-depth-2");
+
+        thisTitle.animate({
+            "padding":"3.5% 0"
+        },200);
     }
     else
     {
-        thisElement.addClass("z-depth-5");
+        thisHeader.addClass("z-depth-2");
+
+        //Change size
+        thisTitle.animate({
+            "padding-top":"1%",
+            "padding-bottom":"1%"
+        },200);
+
+        //Set scroll
+        var offset = thisHeader.offset();
+        $('html, body').animate({
+            scrollTop:(offset.top-64)
+        }, 200);
+
+        //Shrink
     }
 };
 
+var onNavClick = function()
+{
+    $($(this).attr("link")).trigger("click");
+};
+
+var resizePDFViewer = function()
+{
+    var pdf = $("#resume-pdf")[0];
+    pdf.height = $(document).width() * .42;
+}
+
 $(document).ready(function()
 {
+    //$("#wip-modal").openModal();
     $(".button-collapse").sideNav();
-   // $('.header').scrollSpy();
+    //$('.header').scrollSpy();
 
     $(".header").click(onHeaderClick);
+    $(".nav-link").click(onNavClick);
+    resizePDFViewer();
 });
+
+$(window).resize()
+{
+    resizePDFViewer();
+}

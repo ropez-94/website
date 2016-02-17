@@ -16,7 +16,7 @@ nav
     opacity: .9;
     position:fixed;
     top:0px;
-    z-index: 1;
+    z-index: 20;
     min-height:64px;
 }
 
@@ -30,6 +30,11 @@ nav
 .first-header + div
 {
     margin-top: 3.1%;
+}
+
+.brand-logo
+{
+    padding-right:25px !important;
 }
 
 .header
@@ -70,7 +75,7 @@ nav
 .header > h1
 {
     margin: auto auto;
-    padding: 4% 0px;
+    padding: 3.5% 0px;
 
 }
 
@@ -82,6 +87,7 @@ nav
 .section-content
 {
     padding:20px 12% 10px 12%;
+    box-shadow: 0 -8px 17px 0 rgba(0, 0, 0, .15) inset, 0 -6px 20px 0 rgba(0, 0, 0, 0.13) inset;
 }
 
 .white-engrave
@@ -136,5 +142,4 @@ content
 #resume-pdf
 {
     width:100%;
-    min-height:750px;
 }
