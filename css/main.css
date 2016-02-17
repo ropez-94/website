@@ -194,3 +194,14 @@ content
 {
     font-weight:bold !important;
 }
+
+.card
+{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.note
+{
+    font-size: .7em;
+    padding-top:0 !important;
