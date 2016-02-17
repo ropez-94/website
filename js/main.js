@@ -4,10 +4,21 @@
 
 var headerSize = "3.5% 0";
 
+var deleteToast = function()
+{
+    $(".toast").remove();
+}
+
 var onHeaderClick = function()
 {
     var thisHeader = $(this);
     var thisTitle = thisHeader.children();
+
+    $(".toast").animate(
+        {
+            opacity:0
+        }
+    ,300);
 
     if(thisHeader.hasClass("z-depth-2"))
     {
@@ -77,14 +88,10 @@ $(document).ready(function()
 
     //$("#wip-modal").openModal();
     $('#view-classes-btn').leanModal();
-
-
-    $(".button-collapse").sideNav();
-
     $(".header").click(onHeaderClick);
     $(".nav-link").click(onNavClick);
     resizePDFViewer();
-    Materialize.toast("Click on a category to get started", 5000, "rounded z-depth-3");
+    Materialize.toast("Click on a category to get started", 15000, "rounded z-depth-3");
 });
 
 $(window).resize()

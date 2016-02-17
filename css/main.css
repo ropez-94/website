@@ -1,17 +1,4 @@
-@media screen and (min-width: 700px)
-{
-    .first-header + div
-    {
-        margin-top: 5%;
-    }
-}
-@media screen and (max-width: 701px)
-{
-    .first-header + div
-    {
-        margin-top: 3.1%;
-    }
-}
+
 
 
 body
@@ -43,7 +30,10 @@ nav
     padding-bottom:54px;
 }
 
-
+.first-header + div
+{
+    margin-top: 3.1%;
+}
 
 .brand-logo
 {
@@ -229,3 +219,4 @@ content
     font-size: .7em;
     padding-top: 0 !important;
 }
+
