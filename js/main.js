@@ -1,6 +1,9 @@
 /**
  * Created by dakotaleonard on 2/14/16.
  */
+
+var headerSize = "3.5% 0";
+
 var onHeaderClick = function()
 {
     var thisHeader = $(this);
@@ -11,8 +14,8 @@ var onHeaderClick = function()
         thisHeader.removeClass("z-depth-2");
 
         thisTitle.animate({
-            "padding":"3.5% 0"
-        },200);
+            "padding": headerSize
+        },700);
     }
     else
     {
@@ -22,21 +25,35 @@ var onHeaderClick = function()
         thisTitle.animate({
             "padding-top":"1%",
             "padding-bottom":"1%"
-        },200);
+        },700);
 
         //Set scroll
-        var offset = thisHeader.offset();
-        $('html, body').animate({
-            scrollTop:(offset.top-64)
-        }, 200);
+        scrollToElement(thisHeader);
 
-        //Shrink
     }
 };
 
+var scrollToElement = function(element)
+{
+    var offset = element.offset();
+    $('html, body').animate({
+        scrollTop:(offset.top-64)
+    }, 700);
+}
+
 var onNavClick = function()
 {
-    $($(this).attr("link")).trigger("click");
+    var thisHeader = $($(this).attr("link"));
+
+    if(thisHeader.hasClass("z-depth-2")) //Already enabled so just scroll to it
+    {
+        scrollToElement(thisHeader);
+    }
+    else
+    {
+        thisHeader.trigger("click");
+    }
+
 };
 
 var resizePDFViewer = function()
@@ -47,6 +64,17 @@ var resizePDFViewer = function()
 
 $(document).ready(function()
 {
+    //Adjust header heights
+    var footerOffset = $(".page-footer").offset();
+    var footerBottom = footerOffset.top + $(".page-footer").height();
+    if(footerBottom < $(window).height())
+    {
+        headerSize = "5% 0";
+        $(".header").animate({
+            "padding": headerSize
+        },0);
+    }
+
     //$("#wip-modal").openModal();
     $('#view-classes-btn').leanModal();
 
@@ -63,3 +91,6 @@ $(window).resize()
 {
     resizePDFViewer();
 }
+
+
+
