@@ -52,7 +52,6 @@ $(document).ready(function()
 
 
     $(".button-collapse").sideNav();
-    //$('.header').scrollSpy();
 
     $(".header").click(onHeaderClick);
     $(".nav-link").click(onNavClick);

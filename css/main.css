@@ -164,3 +164,33 @@ content
 {
     min-width: 100px !important;
 }
+
+.modal
+{
+    width: 90% !important;
+}
+
+.intern-content
+{
+    padding: 5px 30px !important;
+}
+
+.intern-position
+{
+    padding-bottom:0px !important;
+}
+
+.intern-dates
+{
+    padding-bottom:13px !important;
+}
+
+.bolder
+{
+    font-weight:bolder !important;
+}
+
+.bold
+{
+    font-weight:bold !important;
+}
