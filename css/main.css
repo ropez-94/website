@@ -44,10 +44,33 @@ nav
 {
     background-repeat: no-repeat;
     background-size: cover;
-    width:100%;
     text-align: center;
     vertical-align: middle;
     z-index: 10;
+    margin:10px auto 0 auto;
+    transition: width .8s;
+}
+
+.header-width-small
+{
+    width: 90%;
+
+}
+
+.header-width-small > h1
+{
+    padding: 3.5% 0;
+}
+
+.header-width-large
+{
+    width: 100%;
+
+}
+
+.header-width-large > h1
+{
+    padding: .8%;
 }
 
 #portfolio
@@ -88,7 +111,7 @@ nav
 .header > h1
 {
     margin: auto auto;
-    padding: 3.5% 0px;
+    transition: padding .8s;
 
 }
 

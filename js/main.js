@@ -24,30 +24,18 @@ var onHeaderClick = function()
     {
         thisHeader.removeClass("z-depth-2");
 
-        thisTitle.animate({
-            "padding": headerSize
-        },700, deleteToast);
+        thisHeader.removeClass("header-width-large");
+        thisHeader.addClass("header-width-small");
     }
     else
     {
         thisHeader.addClass("z-depth-2");
 
-        //Change size
-        thisTitle.animate({
-            "padding-top":".8%",
-            "padding-bottom":".8%"
-        },400, function()
-        {
-            thisTitle.animate({
-                "padding-top":"1%",
-                "padding-bottom":"1%"
-            },150);
-        });
-
+        thisHeader.removeClass("header-width-small");
+        thisHeader.addClass("header-width-large");
 
         //Set scroll
         scrollToElement(thisHeader);
-
     }
 };
 
